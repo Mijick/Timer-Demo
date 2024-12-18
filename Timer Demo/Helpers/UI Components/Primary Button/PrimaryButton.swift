@@ -44,13 +44,11 @@ private extension PrimaryButton {
 
 private extension PrimaryButton {
     func createIcon(_ icon: ImageResource) -> some View {
-        Image(icon)
-            .foregroundColor(.neutralWhite)
-            .frame(28)
+        Icon(icon, size: 28, color: .neutralWhite)
     }
     func createText() -> some View {
         Text(text)
-            .font(.medium)
+            .font(.mediumBold)
             .foregroundColor(config.appearance.textColour)
             .animation(nil, value: text)
     }

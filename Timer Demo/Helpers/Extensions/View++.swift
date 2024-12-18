@@ -26,3 +26,9 @@ extension View {
         }
     }
 }
+
+extension View {
+    @ViewBuilder func active(if condition: Bool) -> some View {
+        if condition { self }
+    }
+}

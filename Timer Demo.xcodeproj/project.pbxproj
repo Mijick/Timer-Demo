@@ -15,14 +15,19 @@
 		6D9ADB6A2D10F6F300021874 /* PrimaryButton.Width.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9ADB652D10F6F300021874 /* PrimaryButton.Width.swift */; };
 		6D9ADB6F2D10F73200021874 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9ADB6E2D10F73200021874 /* Configurable.swift */; };
 		6D9ADB732D10F8F100021874 /* UIScreen++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9ADB722D10F8F100021874 /* UIScreen++.swift */; };
+		6D9ADB752D11B26500021874 /* ButtonIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9ADB742D11B26500021874 /* ButtonIcon.swift */; };
+		6D9ADB772D11B27D00021874 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9ADB762D11B27D00021874 /* Icon.swift */; };
+		6D9ADB792D11B41700021874 /* TimerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9ADB782D11B41200021874 /* TimerItem.swift */; };
+		6D9ADB7F2D12192900021874 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D9ADB7E2D12192900021874 /* Inter-Bold.ttf */; };
+		6D9ADB852D12252D00021874 /* TimerIdType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9ADB842D12252C00021874 /* TimerIdType.swift */; };
+		6D9ADB872D122C6F00021874 /* MTimerID++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9ADB862D122C6F00021874 /* MTimerID++.swift */; };
+		6D9ADB8A2D122CAA00021874 /* TimersHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9ADB892D122CA900021874 /* TimersHandler.swift */; };
+		6D9ADB8C2D12C80500021874 /* Collection++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9ADB8B2D12C80300021874 /* Collection++.swift */; };
 		6DC00CD22ABCF428001A0EDC /* Timer_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC00CD12ABCF428001A0EDC /* Timer_DemoApp.swift */; };
 		6DC00CD42ABCF428001A0EDC /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC00CD32ABCF428001A0EDC /* TimerView.swift */; };
 		6DC00CD62ABCF42A001A0EDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC00CD52ABCF42A001A0EDC /* Images.xcassets */; };
 		6DC00CE82ABCF51B001A0EDC /* MijickTimer in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC00CE72ABCF51B001A0EDC /* MijickTimer */; };
-		6DC723282AC310C3006414D1 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC723272AC310C3006414D1 /* NavigationBar.swift */; };
-		6DC7232A2AC3211B006414D1 /* CircleProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC723292AC3211B006414D1 /* CircleProgressButton.swift */; };
 		6DC7232D2AC3294B006414D1 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DC7232B2AC3294B006414D1 /* Inter-Regular.ttf */; };
-		6DC7232E2AC3294B006414D1 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DC7232C2AC3294B006414D1 /* Inter-SemiBold.ttf */; };
 		6DE4542E2AC2F7060033743C /* Spacer++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4542D2AC2F7060033743C /* Spacer++.swift */; };
 		6DE454302AC2F7100033743C /* View++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4542F2AC2F7100033743C /* View++.swift */; };
 /* End PBXBuildFile section */
@@ -37,15 +42,20 @@
 		6D9ADB6E2D10F73200021874 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		6D9ADB702D10F7EC00021874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D9ADB722D10F8F100021874 /* UIScreen++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen++.swift"; sourceTree = "<group>"; };
+		6D9ADB742D11B26500021874 /* ButtonIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonIcon.swift; sourceTree = "<group>"; };
+		6D9ADB762D11B27D00021874 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		6D9ADB782D11B41200021874 /* TimerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerItem.swift; sourceTree = "<group>"; };
+		6D9ADB7E2D12192900021874 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		6D9ADB842D12252C00021874 /* TimerIdType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerIdType.swift; sourceTree = "<group>"; };
+		6D9ADB862D122C6F00021874 /* MTimerID++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MTimerID++.swift"; sourceTree = "<group>"; };
+		6D9ADB892D122CA900021874 /* TimersHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersHandler.swift; sourceTree = "<group>"; };
+		6D9ADB8B2D12C80300021874 /* Collection++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection++.swift"; sourceTree = "<group>"; };
 		6DC00CCE2ABCF428001A0EDC /* Timer Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Timer Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC00CD12ABCF428001A0EDC /* Timer_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer_DemoApp.swift; sourceTree = "<group>"; };
 		6DC00CD32ABCF428001A0EDC /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		6DC00CD52ABCF42A001A0EDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6DC00CEA2ABCF52C001A0EDC /* Timer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Timer; path = ../Timer; sourceTree = "<group>"; };
-		6DC723272AC310C3006414D1 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
-		6DC723292AC3211B006414D1 /* CircleProgressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressButton.swift; sourceTree = "<group>"; };
 		6DC7232B2AC3294B006414D1 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
-		6DC7232C2AC3294B006414D1 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		6DE4542D2AC2F7060033743C /* Spacer++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Spacer++.swift"; sourceTree = "<group>"; };
 		6DE4542F2AC2F7100033743C /* View++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View++.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +96,22 @@
 				6D9ADB6E2D10F73200021874 /* Configurable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6D9ADB832D12251700021874 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				6D9ADB842D12252C00021874 /* TimerIdType.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		6D9ADB882D122CA200021874 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				6D9ADB892D122CA900021874 /* TimersHandler.swift */,
+			);
+			path = Handlers;
 			sourceTree = "<group>";
 		};
 		6DC00CC52ABCF428001A0EDC = {
@@ -146,6 +172,8 @@
 		6DC00CED2ABCF5BF001A0EDC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				6D9ADB882D122CA200021874 /* Handlers */,
+				6D9ADB832D12251700021874 /* Enumerations */,
 				6DE454172AC2F4650033743C /* UI Components */,
 				6D9ADB6B2D10F72200021874 /* Protocols */,
 				6DE454182AC2F4720033743C /* Extensions */,
@@ -164,9 +192,10 @@
 		6DE454172AC2F4650033743C /* UI Components */ = {
 			isa = PBXGroup;
 			children = (
+				6D9ADB782D11B41200021874 /* TimerItem.swift */,
+				6D9ADB762D11B27D00021874 /* Icon.swift */,
+				6D9ADB742D11B26500021874 /* ButtonIcon.swift */,
 				6D9ADB622D10F6E800021874 /* Primary Button */,
-				6DC723292AC3211B006414D1 /* CircleProgressButton.swift */,
-				6DC723272AC310C3006414D1 /* NavigationBar.swift */,
 				6D9ADB5F2D10F60F00021874 /* Modifiers */,
 			);
 			path = "UI Components";
@@ -175,6 +204,8 @@
 		6DE454182AC2F4720033743C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6D9ADB8B2D12C80300021874 /* Collection++.swift */,
+				6D9ADB862D122C6F00021874 /* MTimerID++.swift */,
 				6D9ADB722D10F8F100021874 /* UIScreen++.swift */,
 				6DE4542D2AC2F7060033743C /* Spacer++.swift */,
 				6DE4542F2AC2F7100033743C /* View++.swift */,
@@ -186,7 +217,7 @@
 		6DE454192AC2F48C0033743C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				6DC7232C2AC3294B006414D1 /* Inter-SemiBold.ttf */,
+				6D9ADB7E2D12192900021874 /* Inter-Bold.ttf */,
 				6DC7232B2AC3294B006414D1 /* Inter-Regular.ttf */,
 			);
 			path = Fonts;
@@ -256,7 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DC7232E2AC3294B006414D1 /* Inter-SemiBold.ttf in Resources */,
+				6D9ADB7F2D12192900021874 /* Inter-Bold.ttf in Resources */,
 				6D9ADB5C2D10F4D600021874 /* Colors.xcassets in Resources */,
 				6DC00CD62ABCF42A001A0EDC /* Images.xcassets in Resources */,
 				6DC7232D2AC3294B006414D1 /* Inter-Regular.ttf in Resources */,
@@ -271,18 +302,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DE454302AC2F7100033743C /* View++.swift in Sources */,
+				6D9ADB8C2D12C80500021874 /* Collection++.swift in Sources */,
 				6DC00CD42ABCF428001A0EDC /* TimerView.swift in Sources */,
-				6DC7232A2AC3211B006414D1 /* CircleProgressButton.swift in Sources */,
+				6D9ADB752D11B26500021874 /* ButtonIcon.swift in Sources */,
+				6D9ADB772D11B27D00021874 /* Icon.swift in Sources */,
 				6D9ADB732D10F8F100021874 /* UIScreen++.swift in Sources */,
 				6DE4542E2AC2F7060033743C /* Spacer++.swift in Sources */,
 				6D9ADB672D10F6F300021874 /* PrimaryButton.Appearance.swift in Sources */,
 				6D9ADB692D10F6F300021874 /* PrimaryButton.swift in Sources */,
 				6D9ADB6A2D10F6F300021874 /* PrimaryButton.Width.swift in Sources */,
+				6D9ADB792D11B41700021874 /* TimerItem.swift in Sources */,
+				6D9ADB852D12252D00021874 /* TimerIdType.swift in Sources */,
+				6D9ADB872D122C6F00021874 /* MTimerID++.swift in Sources */,
 				6D9ADB6F2D10F73200021874 /* Configurable.swift in Sources */,
 				6D9ADB5E2D10F59300021874 /* Font++.swift in Sources */,
 				6D9ADB612D10F61900021874 /* CustomFont.swift in Sources */,
-				6DC723282AC310C3006414D1 /* NavigationBar.swift in Sources */,
 				6DC00CD22ABCF428001A0EDC /* Timer_DemoApp.swift in Sources */,
+				6D9ADB8A2D122CAA00021874 /* TimersHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
