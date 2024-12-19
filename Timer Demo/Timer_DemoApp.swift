@@ -10,9 +10,16 @@
 
 
 import SwiftUI
+import MijickPopups
 
 @main struct Timer_DemoApp: App {
     var body: some Scene { WindowGroup {
-        TimerView().preferredColorScheme(.dark)
+        TimerView()
+            .preferredColorScheme(.dark)
+            .registerPopups() {
+                $0.vertical {
+                    $0.backgroundColor(.backgroundPrimary)
+                }
+            }
     }}
 }

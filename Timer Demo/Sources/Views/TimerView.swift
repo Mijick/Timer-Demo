@@ -1,80 +1,85 @@
 //
-//  TimerView.swift of Timer Demo
+//  TimerView.swift
+//  Timer Demo
 //
-//  Created by Tomasz Kurylik
-//    - Twitter: https://twitter.com/tkurylik
-//    - Mail: tomasz.kurylik@mijick.com
-//    - GitHub: https://github.com/FulcrumOne
+//  Created by Alina Petrovska
+//    - Mail: alina.petrovska@mijick.com
+//    - GitHub: https://github.com/Mijick
 //
-//  Copyright ©2023 Mijick. Licensed under MIT License.
+//  Copyright ©2024 Mijick. All rights reserved.
 
 
 import SwiftUI
 import MijickTimer
 
 struct TimerView: View {
-    @State private var currentTime: MTime = .init()
-    @State private var isTimerRunning: Bool = true
-    @State private var timerProgress: Double = 0
-
-
+    @StateObject private var timersHandler: TimersHandler = .init()
+    
     var body: some View {
-        VStack(spacing: 0) {
-            Spacer.height(8)
-            createNavigationBar()
+        VStack(spacing: 20) {
+            createHeader()
+            createScrollableContent()
             Spacer()
-            createCounterText()
-            Spacer()
-            createButton()
-            Spacer.height(28)
+            createBrandView()
         }
-        .frame(maxWidth: .infinity)
-        .padding(.horizontal, margins)
-        .animation(.smooth, value: currentTime)
-        .animation(.smooth, value: isTimerRunning)
-        .animation(.smooth, value: timerProgress)
-        .onAppear(perform: onAppear)
-    }
-}
-private extension TimerView {
-    func createNavigationBar() -> some View {
-        NavigationBar(title: "To do something", time: startTime)
-    }
-    func createCounterText() -> some View {
-        Text(currentTime.toString())
-            .font(.mono(52))
-            .foregroundColor(.onBackgroundPrimary)
-            .contentTransition(.numericText(countsDown: true))
-    }
-    func createButton() -> some View {
-        CircleProgressButton(icon: buttonIcon, progress: timerProgress, action: onButtonTap)
+        .padding(.horizontal, 16)
+        .padding(.top, 32)
+        .padding(.bottom, 12)
+        .animation(.spring, value: timersHandler.timers.count)
+        .animation(.default, value: isAvailableAddAction)
     }
 }
 
 private extension TimerView {
-    func onAppear() {
-        try! MTimer
-            .publish(every: 1, currentTime: $currentTime)
-            .bindTimerStatus(isTimerRunning: $isTimerRunning)
-            .bindTimerProgress(progress: $timerProgress)
-            .start(from: startTime, to: endTime)
+    func createHeader() -> some View {
+        Text("Active Timers")
+            .font(.h3)
+            .foregroundStyle(Color.textPrimary)
+            .frame(maxWidth: .infinity, alignment: .leading)
     }
-    func onButtonTap() {
-        switch isTimerRunning {
-            case true: MTimer.stop()
-            case false: try! MTimer.resume()
+    func createScrollableContent() -> some View {
+        ScrollView {
+            VStack(spacing: 4) {
+                createTimerList()
+                createAddButton()
+            }
         }
     }
+    func createBrandView() -> some View {
+        Image(.madeBy)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(height: 110.09)
+    }
 }
 
-// MARK: - Timer Configuration
 private extension TimerView {
-    var startTime: MTime { .init(minutes: 21, seconds: 37) }
-    var endTime: MTime { .zero }
+    func createTimerList() -> some View {
+        VStack(spacing: 4) {
+            ForEach(0..<timersHandler.timers.count, id: \.self, content: createTimerView)
+        }
+    }
+    func createAddButton() -> some View {
+        PrimaryButton("", action: onAddTap)
+            .setIcon(.addNew)
+            .active(if: isAvailableAddAction)
+    }
 }
 
-// MARK: - UI Configuration
 private extension TimerView {
-    var buttonIcon: String { isTimerRunning ? "icon.pause" : "icon.play" }
-    var margins: CGFloat { 24 }
+    @ViewBuilder func createTimerView(_ item: Int) -> some View {
+        if let timer = timersHandler.timers[safe: item] {
+            TimerItem(timer: timer)
+                .onTapGesture { onTimerItemTap(timer) }
+        }
+    }
+}
+
+private extension TimerView {
+    func onAddTap() { timersHandler.addNewTimer() }
+    func onTimerItemTap(_ item: MTimer) { TimerDetailView(item.id).present() }
+}
+
+private extension TimerView {
+    var isAvailableAddAction: Bool { timersHandler.isAvailableAddAction }
 }
