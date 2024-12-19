@@ -30,7 +30,6 @@
 		6DC00CD62ABCF42A001A0EDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC00CD52ABCF42A001A0EDC /* Images.xcassets */; };
 		6DC00CE82ABCF51B001A0EDC /* MijickTimer in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC00CE72ABCF51B001A0EDC /* MijickTimer */; };
 		6DC7232D2AC3294B006414D1 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DC7232B2AC3294B006414D1 /* Inter-Regular.ttf */; };
-		6DE4542E2AC2F7060033743C /* Spacer++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4542D2AC2F7060033743C /* Spacer++.swift */; };
 		6DE454302AC2F7100033743C /* View++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4542F2AC2F7100033743C /* View++.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +57,6 @@
 		6DC00CD32ABCF428001A0EDC /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		6DC00CD52ABCF42A001A0EDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6DC7232B2AC3294B006414D1 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
-		6DE4542D2AC2F7060033743C /* Spacer++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Spacer++.swift"; sourceTree = "<group>"; };
 		6DE4542F2AC2F7100033743C /* View++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View++.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,7 +200,6 @@
 				6D9ADB8B2D12C80300021874 /* Collection++.swift */,
 				6D9ADB862D122C6F00021874 /* MTimerID++.swift */,
 				6D9ADB722D10F8F100021874 /* UIScreen++.swift */,
-				6DE4542D2AC2F7060033743C /* Spacer++.swift */,
 				6DE4542F2AC2F7100033743C /* View++.swift */,
 				6D9ADB5D2D10F59200021874 /* Font++.swift */,
 			);
@@ -305,7 +302,6 @@
 				6D9ADB772D11B27D00021874 /* Icon.swift in Sources */,
 				6D9ADB902D12E5C100021874 /* LogoView.swift in Sources */,
 				6D9ADB732D10F8F100021874 /* UIScreen++.swift in Sources */,
-				6DE4542E2AC2F7060033743C /* Spacer++.swift in Sources */,
 				6D9ADB672D10F6F300021874 /* PrimaryButton.Appearance.swift in Sources */,
 				6D9ADB8E2D12CAE300021874 /* TimerDetailView.swift in Sources */,
 				6D9ADB692D10F6F300021874 /* PrimaryButton.swift in Sources */,

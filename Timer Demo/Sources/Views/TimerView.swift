@@ -1,12 +1,12 @@
 //
-//  TimerView.swift of Timer Demo
+//  TimerView.swift
+//  Timer Demo
 //
-//  Created by Tomasz Kurylik
-//    - Twitter: https://twitter.com/tkurylik
-//    - Mail: tomasz.kurylik@mijick.com
-//    - GitHub: https://github.com/FulcrumOne
+//  Created by Alina Petrovska
+//    - Mail: alina.petrovska@mijick.com
+//    - GitHub: https://github.com/Mijick
 //
-//  Copyright ©2023 Mijick. Licensed under MIT License.
+//  Copyright ©2024 Mijick. All rights reserved.
 
 
 import SwiftUI
@@ -82,8 +82,4 @@ private extension TimerView {
 
 private extension TimerView {
     var isAvailableAddAction: Bool { timersHandler.isAvailableAddAction }
-}
-
-#Preview {
-    TimerView()
 }

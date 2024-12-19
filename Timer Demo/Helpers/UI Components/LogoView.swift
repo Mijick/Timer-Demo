@@ -2,8 +2,11 @@
 //  LogoView.swift
 //  Timer Demo
 //
-//  Created by Alina Petrovska on 18.12.2024.
+//  Created by Alina Petrovska
+//    - Mail: alina.petrovska@mijick.com
+//    - GitHub: https://github.com/Mijick
 //
+//  Copyright ©2024 Mijick. All rights reserved.
 
 import SwiftUI
 import MijickTimer
@@ -53,9 +56,4 @@ private extension LogoView {
             degree = -Double(numberOfCircles * 90)
         }
     }
-}
-
-#Preview {
-    try? MTimer(.breakfast).publish(every: 1).start()
-    return TimerDetailView(.breakfast)
 }

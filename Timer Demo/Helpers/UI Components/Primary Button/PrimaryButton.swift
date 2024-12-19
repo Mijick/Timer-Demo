@@ -1,12 +1,12 @@
 //
 //  PrimaryButton.swift
-//  Popups-Demo
+//  Timer Demo
 //
-//  Created by Alina Petrovska on 23.10.2024.
-//    - Mail: alina.petrovskaya@mijick.com
+//  Created by Alina Petrovska
+//    - Mail: alina.petrovska@mijick.com
+//    - GitHub: https://github.com/Mijick
 //
-//  Copyright ©2023 Mijick. Licensed under MIT License.
-//
+//  Copyright ©2024 Mijick. All rights reserved.
 
 import SwiftUI
 
