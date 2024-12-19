@@ -38,19 +38,12 @@ private extension CustomFont {
 // MARK: Header
 extension CustomFont {
     static var h1: CustomFont { .init(.bold, size: 48, lineHeight: 58, kerning: -0.32) }
-    static var h2: CustomFont { .init(.bold, size: 40, lineHeight: 48, kerning: -0.32) }
     static var h3: CustomFont { .init(.bold, size: 32, lineHeight: 38, kerning: -0.32) }
     static var h4: CustomFont { .init(.bold, size: 28, lineHeight: 32, kerning: -0.28) }
-    static var h5: CustomFont { .init(.bold, size: 24, lineHeight: 28, kerning: -0.24) }
-    static var h6: CustomFont { .init(.bold, size: 20, lineHeight: 24, kerning: -0.24) }
 }
 
 // MARK: Body
 extension CustomFont {
-    static var large: CustomFont { .init(.regular, size: 20, lineHeight: 32, kerning: -0.8) }
     static var mediumBold: CustomFont { .init(.bold, size: 16, lineHeight: 24, kerning: -0.16) }
     static var mediumRegular: CustomFont { .init(.regular, size: 16, lineHeight: 24, kerning: -0.16) }
-    static var smallRegular: CustomFont { .init(.regular, size: 12, lineHeight: 20, kerning: 0.16) }
-    static var smallBold: CustomFont { .init(.bold, size: 12, lineHeight: 20, kerning: 0) }
-    static var tiny: CustomFont { .init(.regular, size: 8, lineHeight: 12, kerning: 0.16) }
 }

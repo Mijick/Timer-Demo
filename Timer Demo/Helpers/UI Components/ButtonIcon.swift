@@ -29,7 +29,7 @@ struct ButtonIcon: View, Configurable {
 private extension ButtonIcon {
     func createLabel() -> some View {
         Icon(image, size: 22, color: config.foregroundcolor)
-            .padding(9)
+            .padding(config.iconPadding)
             .rectangleBackground(.backgroundSecondary50, 12)
     }
 }
@@ -38,6 +38,8 @@ private extension ButtonIcon {
 extension ButtonIcon {
     @MainActor struct Config {
         var foregroundcolor: Color = .textPrimary
+        var iconPadding: CGFloat = 9
     }
     func setForegroundColor(_ value: Color) -> Self { configure(path: \.config.foregroundcolor, value) }
+    func setIconPadding(_ value: CGFloat) -> Self { configure(path: \.config.iconPadding, value) }
 }

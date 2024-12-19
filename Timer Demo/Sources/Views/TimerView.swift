@@ -61,7 +61,7 @@ private extension TimerView {
     }
     func createAddButton() -> some View {
         PrimaryButton("", action: onAddTap)
-            .setIcon(.add)
+            .setIcon(.addNew)
             .active(if: isAvailableAddAction)
     }
 }
@@ -70,14 +70,14 @@ private extension TimerView {
     @ViewBuilder func createTimerView(_ item: Int) -> some View {
         if let timer = timersHandler.timers[safe: item] {
             TimerItem(timer: timer)
-                .onTapGesture { onTimerTap(timer) }
+                .onTapGesture { onTimerItemTap(timer) }
         }
     }
 }
 
 private extension TimerView {
     func onAddTap() { timersHandler.addNewTimer() }
-    func onTimerTap(_ item: MTimer) { }
+    func onTimerItemTap(_ item: MTimer) { TimerDetailView(item.id).present() }
 }
 
 private extension TimerView {

@@ -10,6 +10,7 @@
 
 
 import SwiftUI
+import MijickPopups
 
 // MARK: - Helpers
 extension View {
@@ -32,3 +33,8 @@ extension View {
         if condition { self }
     }
 }
+
+extension View where Self: BottomPopup {
+    func present() { Task { await present() }}
+}
+
